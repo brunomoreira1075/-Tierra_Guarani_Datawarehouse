@@ -1,0 +1,5 @@
+﻿nk_metodo_pago,metodo_pago
+EF,Efectivo
+TD,Tarjeta de débito
+TC,Tarjeta de crédito
+TR,Transferencia

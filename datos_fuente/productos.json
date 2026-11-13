@@ -1,0 +1,702 @@
+[
+  {
+    "nk_producto":"P001",
+    "producto":"Producto 001",
+    "categoria":"Limpieza",
+    "marca":"Marca 2",
+    "costo_referencia":47370
+  },
+  {
+    "nk_producto":"P002",
+    "producto":"Producto 002",
+    "categoria":"Hogar",
+    "marca":"Marca 3",
+    "costo_referencia":12715
+  },
+  {
+    "nk_producto":"P003",
+    "producto":"Producto 003",
+    "categoria":"Bebidas",
+    "marca":"Marca 4",
+    "costo_referencia":4860
+  },
+  {
+    "nk_producto":"P004",
+    "producto":"Producto 004",
+    "categoria":"Higiene",
+    "marca":"Marca 5",
+    "costo_referencia":36455
+  },
+  {
+    "nk_producto":"P005",
+    "producto":"Producto 005",
+    "categoria":"Alimentos",
+    "marca":"Marca 6",
+    "costo_referencia":22322
+  },
+  {
+    "nk_producto":"P006",
+    "producto":"Producto 006",
+    "categoria":"Limpieza",
+    "marca":"Marca 7",
+    "costo_referencia":27564
+  },
+  {
+    "nk_producto":"P007",
+    "producto":"Producto 007",
+    "categoria":"Hogar",
+    "marca":"Marca 8",
+    "costo_referencia":7611
+  },
+  {
+    "nk_producto":"P008",
+    "producto":"Producto 008",
+    "categoria":"Bebidas",
+    "marca":"Marca 9",
+    "costo_referencia":22580
+  },
+  {
+    "nk_producto":"P009",
+    "producto":"Producto 009",
+    "categoria":"Higiene",
+    "marca":"Marca 1",
+    "costo_referencia":36637
+  },
+  {
+    "nk_producto":"P010",
+    "producto":"Producto 010",
+    "categoria":"Alimentos",
+    "marca":"Marca 2",
+    "costo_referencia":21778
+  },
+  {
+    "nk_producto":"P011",
+    "producto":"Producto 011",
+    "categoria":"Limpieza",
+    "marca":"Marca 3",
+    "costo_referencia":46299
+  },
+  {
+    "nk_producto":"P012",
+    "producto":"Producto 012",
+    "categoria":"Hogar",
+    "marca":"Marca 4",
+    "costo_referencia":44211
+  },
+  {
+    "nk_producto":"P013",
+    "producto":"Producto 013",
+    "categoria":"Bebidas",
+    "marca":"Marca 5",
+    "costo_referencia":39778
+  },
+  {
+    "nk_producto":"P014",
+    "producto":"Producto 014",
+    "categoria":"Higiene",
+    "marca":"Marca 6",
+    "costo_referencia":50114
+  },
+  {
+    "nk_producto":"P015",
+    "producto":"Producto 015",
+    "categoria":"Alimentos",
+    "marca":"Marca 7",
+    "costo_referencia":40642
+  },
+  {
+    "nk_producto":"P016",
+    "producto":"Producto 016",
+    "categoria":"Limpieza",
+    "marca":"Marca 8",
+    "costo_referencia":12633
+  },
+  {
+    "nk_producto":"P017",
+    "producto":"Producto 017",
+    "categoria":"Hogar",
+    "marca":"Marca 9",
+    "costo_referencia":47710
+  },
+  {
+    "nk_producto":"P018",
+    "producto":"Producto 018",
+    "categoria":"Bebidas",
+    "marca":"Marca 1",
+    "costo_referencia":37118
+  },
+  {
+    "nk_producto":"P019",
+    "producto":"Producto 019",
+    "categoria":"Higiene",
+    "marca":"Marca 2",
+    "costo_referencia":8571
+  },
+  {
+    "nk_producto":"P020",
+    "producto":"Producto 020",
+    "categoria":"Alimentos",
+    "marca":"Marca 3",
+    "costo_referencia":18862
+  },
+  {
+    "nk_producto":"P021",
+    "producto":"Producto 021",
+    "categoria":"Limpieza",
+    "marca":"Marca 4",
+    "costo_referencia":12032
+  },
+  {
+    "nk_producto":"P022",
+    "producto":"Producto 022",
+    "categoria":"Hogar",
+    "marca":"Marca 5",
+    "costo_referencia":53298
+  },
+  {
+    "nk_producto":"P023",
+    "producto":"Producto 023",
+    "categoria":"Bebidas",
+    "marca":"Marca 6",
+    "costo_referencia":40989
+  },
+  {
+    "nk_producto":"P024",
+    "producto":"Producto 024",
+    "categoria":"Higiene",
+    "marca":"Marca 7",
+    "costo_referencia":50872
+  },
+  {
+    "nk_producto":"P025",
+    "producto":"Producto 025",
+    "categoria":"Alimentos",
+    "marca":"Marca 8",
+    "costo_referencia":18048
+  },
+  {
+    "nk_producto":"P026",
+    "producto":"Producto 026",
+    "categoria":"Limpieza",
+    "marca":"Marca 9",
+    "costo_referencia":36247
+  },
+  {
+    "nk_producto":"P027",
+    "producto":"Producto 027",
+    "categoria":"Hogar",
+    "marca":"Marca 1",
+    "costo_referencia":34614
+  },
+  {
+    "nk_producto":"P028",
+    "producto":"Producto 028",
+    "categoria":"Bebidas",
+    "marca":"Marca 2",
+    "costo_referencia":42265
+  },
+  {
+    "nk_producto":"P029",
+    "producto":"Producto 029",
+    "categoria":"Higiene",
+    "marca":"Marca 3",
+    "costo_referencia":9577
+  },
+  {
+    "nk_producto":"P030",
+    "producto":"Producto 030",
+    "categoria":"Alimentos",
+    "marca":"Marca 4",
+    "costo_referencia":30030
+  },
+  {
+    "nk_producto":"P031",
+    "producto":"Producto 031",
+    "categoria":"Limpieza",
+    "marca":"Marca 5",
+    "costo_referencia":36693
+  },
+  {
+    "nk_producto":"P032",
+    "producto":"Producto 032",
+    "categoria":"Hogar",
+    "marca":"Marca 6",
+    "costo_referencia":46033
+  },
+  {
+    "nk_producto":"P033",
+    "producto":"Producto 033",
+    "categoria":"Bebidas",
+    "marca":"Marca 7",
+    "costo_referencia":37288
+  },
+  {
+    "nk_producto":"P034",
+    "producto":"Producto 034",
+    "categoria":"Higiene",
+    "marca":"Marca 8",
+    "costo_referencia":26591
+  },
+  {
+    "nk_producto":"P035",
+    "producto":"Producto 035",
+    "categoria":"Alimentos",
+    "marca":"Marca 9",
+    "costo_referencia":27196
+  },
+  {
+    "nk_producto":"P036",
+    "producto":"Producto 036",
+    "categoria":"Limpieza",
+    "marca":"Marca 1",
+    "costo_referencia":20948
+  },
+  {
+    "nk_producto":"P037",
+    "producto":"Producto 037",
+    "categoria":"Hogar",
+    "marca":"Marca 2",
+    "costo_referencia":11597
+  },
+  {
+    "nk_producto":"P038",
+    "producto":"Producto 038",
+    "categoria":"Bebidas",
+    "marca":"Marca 3",
+    "costo_referencia":17811
+  },
+  {
+    "nk_producto":"P039",
+    "producto":"Producto 039",
+    "categoria":"Higiene",
+    "marca":"Marca 4",
+    "costo_referencia":11025
+  },
+  {
+    "nk_producto":"P040",
+    "producto":"Producto 040",
+    "categoria":"Alimentos",
+    "marca":"Marca 5",
+    "costo_referencia":15156
+  },
+  {
+    "nk_producto":"P041",
+    "producto":"Producto 041",
+    "categoria":"Limpieza",
+    "marca":"Marca 6",
+    "costo_referencia":47470
+  },
+  {
+    "nk_producto":"P042",
+    "producto":"Producto 042",
+    "categoria":"Hogar",
+    "marca":"Marca 7",
+    "costo_referencia":30579
+  },
+  {
+    "nk_producto":"P043",
+    "producto":"Producto 043",
+    "categoria":"Bebidas",
+    "marca":"Marca 8",
+    "costo_referencia":8217
+  },
+  {
+    "nk_producto":"P044",
+    "producto":"Producto 044",
+    "categoria":"Higiene",
+    "marca":"Marca 9",
+    "costo_referencia":25691
+  },
+  {
+    "nk_producto":"P045",
+    "producto":"Producto 045",
+    "categoria":"Alimentos",
+    "marca":"Marca 1",
+    "costo_referencia":17445
+  },
+  {
+    "nk_producto":"P046",
+    "producto":"Producto 046",
+    "categoria":"Limpieza",
+    "marca":"Marca 2",
+    "costo_referencia":37653
+  },
+  {
+    "nk_producto":"P047",
+    "producto":"Producto 047",
+    "categoria":"Hogar",
+    "marca":"Marca 3",
+    "costo_referencia":46260
+  },
+  {
+    "nk_producto":"P048",
+    "producto":"Producto 048",
+    "categoria":"Bebidas",
+    "marca":"Marca 4",
+    "costo_referencia":4161
+  },
+  {
+    "nk_producto":"P049",
+    "producto":"Producto 049",
+    "categoria":"Higiene",
+    "marca":"Marca 5",
+    "costo_referencia":27489
+  },
+  {
+    "nk_producto":"P050",
+    "producto":"Producto 050",
+    "categoria":"Alimentos",
+    "marca":"Marca 6",
+    "costo_referencia":26556
+  },
+  {
+    "nk_producto":"P051",
+    "producto":"Producto 051",
+    "categoria":"Limpieza",
+    "marca":"Marca 7",
+    "costo_referencia":54521
+  },
+  {
+    "nk_producto":"P052",
+    "producto":"Producto 052",
+    "categoria":"Hogar",
+    "marca":"Marca 8",
+    "costo_referencia":22306
+  },
+  {
+    "nk_producto":"P053",
+    "producto":"Producto 053",
+    "categoria":"Bebidas",
+    "marca":"Marca 9",
+    "costo_referencia":12008
+  },
+  {
+    "nk_producto":"P054",
+    "producto":"Producto 054",
+    "categoria":"Higiene",
+    "marca":"Marca 1",
+    "costo_referencia":13562
+  },
+  {
+    "nk_producto":"P055",
+    "producto":"Producto 055",
+    "categoria":"Alimentos",
+    "marca":"Marca 2",
+    "costo_referencia":28093
+  },
+  {
+    "nk_producto":"P056",
+    "producto":"Producto 056",
+    "categoria":"Limpieza",
+    "marca":"Marca 3",
+    "costo_referencia":34135
+  },
+  {
+    "nk_producto":"P057",
+    "producto":"Producto 057",
+    "categoria":"Hogar",
+    "marca":"Marca 4",
+    "costo_referencia":20318
+  },
+  {
+    "nk_producto":"P058",
+    "producto":"Producto 058",
+    "categoria":"Bebidas",
+    "marca":"Marca 5",
+    "costo_referencia":25918
+  },
+  {
+    "nk_producto":"P059",
+    "producto":"Producto 059",
+    "categoria":"Higiene",
+    "marca":"Marca 6",
+    "costo_referencia":37658
+  },
+  {
+    "nk_producto":"P060",
+    "producto":"Producto 060",
+    "categoria":"Alimentos",
+    "marca":"Marca 7",
+    "costo_referencia":18949
+  },
+  {
+    "nk_producto":"P061",
+    "producto":"Producto 061",
+    "categoria":"Limpieza",
+    "marca":"Marca 8",
+    "costo_referencia":53183
+  },
+  {
+    "nk_producto":"P062",
+    "producto":"Producto 062",
+    "categoria":"Hogar",
+    "marca":"Marca 9",
+    "costo_referencia":14284
+  },
+  {
+    "nk_producto":"P063",
+    "producto":"Producto 063",
+    "categoria":"Bebidas",
+    "marca":"Marca 1",
+    "costo_referencia":51665
+  },
+  {
+    "nk_producto":"P064",
+    "producto":"Producto 064",
+    "categoria":"Higiene",
+    "marca":"Marca 2",
+    "costo_referencia":48543
+  },
+  {
+    "nk_producto":"P065",
+    "producto":"Producto 065",
+    "categoria":"Alimentos",
+    "marca":"Marca 3",
+    "costo_referencia":52784
+  },
+  {
+    "nk_producto":"P066",
+    "producto":"Producto 066",
+    "categoria":"Limpieza",
+    "marca":"Marca 4",
+    "costo_referencia":44569
+  },
+  {
+    "nk_producto":"P067",
+    "producto":"Producto 067",
+    "categoria":"Hogar",
+    "marca":"Marca 5",
+    "costo_referencia":30729
+  },
+  {
+    "nk_producto":"P068",
+    "producto":"Producto 068",
+    "categoria":"Bebidas",
+    "marca":"Marca 6",
+    "costo_referencia":34745
+  },
+  {
+    "nk_producto":"P069",
+    "producto":"Producto 069",
+    "categoria":"Higiene",
+    "marca":"Marca 7",
+    "costo_referencia":14144
+  },
+  {
+    "nk_producto":"P070",
+    "producto":"Producto 070",
+    "categoria":"Alimentos",
+    "marca":"Marca 8",
+    "costo_referencia":21272
+  },
+  {
+    "nk_producto":"P071",
+    "producto":"Producto 071",
+    "categoria":"Limpieza",
+    "marca":"Marca 9",
+    "costo_referencia":27352
+  },
+  {
+    "nk_producto":"P072",
+    "producto":"Producto 072",
+    "categoria":"Hogar",
+    "marca":"Marca 1",
+    "costo_referencia":52261
+  },
+  {
+    "nk_producto":"P073",
+    "producto":"Producto 073",
+    "categoria":"Bebidas",
+    "marca":"Marca 2",
+    "costo_referencia":44431
+  },
+  {
+    "nk_producto":"P074",
+    "producto":"Producto 074",
+    "categoria":"Higiene",
+    "marca":"Marca 3",
+    "costo_referencia":32513
+  },
+  {
+    "nk_producto":"P075",
+    "producto":"Producto 075",
+    "categoria":"Alimentos",
+    "marca":"Marca 4",
+    "costo_referencia":34145
+  },
+  {
+    "nk_producto":"P076",
+    "producto":"Producto 076",
+    "categoria":"Limpieza",
+    "marca":"Marca 5",
+    "costo_referencia":25787
+  },
+  {
+    "nk_producto":"P077",
+    "producto":"Producto 077",
+    "categoria":"Hogar",
+    "marca":"Marca 6",
+    "costo_referencia":25101
+  },
+  {
+    "nk_producto":"P078",
+    "producto":"Producto 078",
+    "categoria":"Bebidas",
+    "marca":"Marca 7",
+    "costo_referencia":49873
+  },
+  {
+    "nk_producto":"P079",
+    "producto":"Producto 079",
+    "categoria":"Higiene",
+    "marca":"Marca 8",
+    "costo_referencia":3713
+  },
+  {
+    "nk_producto":"P080",
+    "producto":"Producto 080",
+    "categoria":"Alimentos",
+    "marca":"Marca 9",
+    "costo_referencia":19946
+  },
+  {
+    "nk_producto":"P081",
+    "producto":"Producto 081",
+    "categoria":"Limpieza",
+    "marca":"Marca 1",
+    "costo_referencia":24530
+  },
+  {
+    "nk_producto":"P082",
+    "producto":"Producto 082",
+    "categoria":"Hogar",
+    "marca":"Marca 2",
+    "costo_referencia":39343
+  },
+  {
+    "nk_producto":"P083",
+    "producto":"Producto 083",
+    "categoria":"Bebidas",
+    "marca":"Marca 3",
+    "costo_referencia":24712
+  },
+  {
+    "nk_producto":"P084",
+    "producto":"Producto 084",
+    "categoria":"Higiene",
+    "marca":"Marca 4",
+    "costo_referencia":19661
+  },
+  {
+    "nk_producto":"P085",
+    "producto":"Producto 085",
+    "categoria":"Alimentos",
+    "marca":"Marca 5",
+    "costo_referencia":7535
+  },
+  {
+    "nk_producto":"P086",
+    "producto":"Producto 086",
+    "categoria":"Limpieza",
+    "marca":"Marca 6",
+    "costo_referencia":16969
+  },
+  {
+    "nk_producto":"P087",
+    "producto":"Producto 087",
+    "categoria":"Hogar",
+    "marca":"Marca 7",
+    "costo_referencia":8944
+  },
+  {
+    "nk_producto":"P088",
+    "producto":"Producto 088",
+    "categoria":"Bebidas",
+    "marca":"Marca 8",
+    "costo_referencia":39593
+  },
+  {
+    "nk_producto":"P089",
+    "producto":"Producto 089",
+    "categoria":"Higiene",
+    "marca":"Marca 9",
+    "costo_referencia":25532
+  },
+  {
+    "nk_producto":"P090",
+    "producto":"Producto 090",
+    "categoria":"Alimentos",
+    "marca":"Marca 1",
+    "costo_referencia":15236
+  },
+  {
+    "nk_producto":"P091",
+    "producto":"Producto 091",
+    "categoria":"Limpieza",
+    "marca":"Marca 2",
+    "costo_referencia":31313
+  },
+  {
+    "nk_producto":"P092",
+    "producto":"Producto 092",
+    "categoria":"Hogar",
+    "marca":"Marca 3",
+    "costo_referencia":28895
+  },
+  {
+    "nk_producto":"P093",
+    "producto":"Producto 093",
+    "categoria":"Bebidas",
+    "marca":"Marca 4",
+    "costo_referencia":27847
+  },
+  {
+    "nk_producto":"P094",
+    "producto":"Producto 094",
+    "categoria":"Higiene",
+    "marca":"Marca 5",
+    "costo_referencia":33371
+  },
+  {
+    "nk_producto":"P095",
+    "producto":"Producto 095",
+    "categoria":"Alimentos",
+    "marca":"Marca 6",
+    "costo_referencia":35772
+  },
+  {
+    "nk_producto":"P096",
+    "producto":"Producto 096",
+    "categoria":"Limpieza",
+    "marca":"Marca 7",
+    "costo_referencia":13228
+  },
+  {
+    "nk_producto":"P097",
+    "producto":"Producto 097",
+    "categoria":"Hogar",
+    "marca":"Marca 8",
+    "costo_referencia":11483
+  },
+  {
+    "nk_producto":"P098",
+    "producto":"Producto 098",
+    "categoria":"Bebidas",
+    "marca":"Marca 9",
+    "costo_referencia":41158
+  },
+  {
+    "nk_producto":"P099",
+    "producto":"Producto 099",
+    "categoria":"Higiene",
+    "marca":"Marca 1",
+    "costo_referencia":53591
+  },
+  {
+    "nk_producto":"P100",
+    "producto":"Producto 100",
+    "categoria":"Alimentos",
+    "marca":"Marca 2",
+    "costo_referencia":31746
+  }
+]
