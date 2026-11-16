@@ -2,3 +2,4 @@
 *.duckdb.wal
 ~$*.docx
 ~$*.pptx
+/modelo_powerbi_respaldo/
