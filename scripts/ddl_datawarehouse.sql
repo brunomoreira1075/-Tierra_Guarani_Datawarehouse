@@ -3,21 +3,6 @@
 
 CREATE SCHEMA IF NOT EXISTS dw;
 
-CREATE TABLE IF NOT EXISTS dw.fact_ventas (
-    nk_linea VARCHAR PRIMARY KEY,
-    nk_operacion VARCHAR,
-    sk_fecha BIGINT,
-    sk_producto BIGINT,
-    sk_sucursal BIGINT,
-    sk_cliente BIGINT,
-    sk_metodo_pago BIGINT,
-    cantidad BIGINT,
-    precio_unitario BIGINT,
-    costo_unitario BIGINT,
-    importe_venta BIGINT,
-    costo_total BIGINT,
-    margen_bruto BIGINT
-);
 -- Dimension de clientes
 -- Incluye el cliente desconocido con sk_cliente = -1
 
@@ -65,4 +50,29 @@ CREATE TABLE IF NOT EXISTS dw.dim_metodo_pago (
     sk_metodo_pago BIGINT PRIMARY KEY,
     nk_metodo_pago VARCHAR NOT NULL UNIQUE,
     metodo_pago VARCHAR NOT NULL
+);
+CREATE TABLE IF NOT EXISTS dw.fact_ventas (
+    nk_linea VARCHAR PRIMARY KEY,
+    nk_operacion VARCHAR,
+    sk_fecha BIGINT,
+    sk_producto BIGINT,
+    sk_sucursal BIGINT,
+    sk_cliente BIGINT,
+    sk_metodo_pago BIGINT,
+    cantidad BIGINT,
+    precio_unitario BIGINT,
+    costo_unitario BIGINT,
+    importe_venta BIGINT,
+    costo_total BIGINT,
+   margen_bruto BIGINT,
+CONSTRAINT fk_ventas_fecha FOREIGN KEY (sk_fecha)
+    REFERENCES dw.dim_fecha(sk_fecha),
+CONSTRAINT fk_ventas_producto FOREIGN KEY (sk_producto)
+    REFERENCES dw.dim_producto(sk_producto),
+CONSTRAINT fk_ventas_sucursal FOREIGN KEY (sk_sucursal)
+    REFERENCES dw.dim_sucursal(sk_sucursal),
+CONSTRAINT fk_ventas_cliente FOREIGN KEY (sk_cliente)
+    REFERENCES dw.dim_cliente(sk_cliente),
+CONSTRAINT fk_ventas_pago FOREIGN KEY (sk_metodo_pago)
+    REFERENCES dw.dim_metodo_pago(sk_metodo_pago)
 );
