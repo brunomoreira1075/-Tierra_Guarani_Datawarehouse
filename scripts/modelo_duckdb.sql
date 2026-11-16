@@ -24,7 +24,7 @@ CREATE SCHEMA IF NOT EXISTS stg;
 CREATE OR REPLACE TABLE stg.ventas AS
 SELECT *
 FROM read_csv_auto(
-    'C:/Users/bruno/Downloads/Tierra_Guarani_Proyecto_Completo/Tierra_Guarani_Proyecto/datos_fuente/ventas.csv',
+    'datos_fuente/ventas.csv',
     all_varchar = true
 );
 
@@ -32,28 +32,28 @@ FROM read_csv_auto(
 CREATE OR REPLACE TABLE stg.productos AS
 SELECT *
 FROM read_json_auto(
-    'C:/Users/bruno/Downloads/Tierra_Guarani_Proyecto_Completo/Tierra_Guarani_Proyecto/datos_fuente/productos.json'
+    'datos_fuente/productos.json'
 );
 
 -- Sucursales (CSV)
 CREATE OR REPLACE TABLE stg.sucursales AS
 SELECT *
 FROM read_csv_auto(
-    'C:/Users/bruno/Downloads/Tierra_Guarani_Proyecto_Completo/Tierra_Guarani_Proyecto/datos_fuente/sucursales.csv'
+    'datos_fuente/sucursales.csv'
 );
 
 -- Clientes (CSV)
 CREATE OR REPLACE TABLE stg.clientes AS
 SELECT *
 FROM read_csv_auto(
-    'C:/Users/bruno/Downloads/Tierra_Guarani_Proyecto_Completo/Tierra_Guarani_Proyecto/datos_fuente/clientes.csv'
+    'datos_fuente/clientes.csv'
 );
 
 -- Metodos de pago (CSV)
 CREATE OR REPLACE TABLE stg.metodos_pago AS
 SELECT *
 FROM read_csv_auto(
-    'C:/Users/bruno/Downloads/Tierra_Guarani_Proyecto_Completo/Tierra_Guarani_Proyecto/datos_fuente/metodos_pago.csv'
+    'datos_fuente/metodos_pago.csv'
 );
 
 
@@ -67,7 +67,7 @@ FROM read_csv_auto(
 INSERT INTO dw.dim_cliente
 SELECT *
 FROM read_csv_auto(
-    'C:/Users/bruno/Downloads/Tierra_Guarani_Proyecto_Completo/Tierra_Guarani_Proyecto/modelo_powerbi/dim_cliente.csv'
+    'modelo_powerbi/dim_cliente.csv'
 )
 ON CONFLICT (sk_cliente) DO NOTHING;
 
@@ -78,22 +78,16 @@ ON CONFLICT (sk_cliente) DO NOTHING;
 INSERT INTO dw.dim_producto
 SELECT *
 FROM read_csv_auto(
-    'C:/Users/bruno/Downloads/Tierra_Guarani_Proyecto_Completo/Tierra_Guarani_Proyecto/modelo_powerbi/dim_producto.csv'
+    'modelo_powerbi/dim_producto.csv'
 )
-ON CONFLICT (sk_producto) DO UPDATE SET
-    nk_producto = EXCLUDED.nk_producto,
-    producto = EXCLUDED.producto,
-    categoria = EXCLUDED.categoria,
-    marca = EXCLUDED.marca,
-    costo_referencia = EXCLUDED.costo_referencia;
-
+ON CONFLICT (sk_producto) DO NOTHING;
 
 -- DIMENSION SUCURSAL
 
 INSERT INTO dw.dim_sucursal
 SELECT *
 FROM read_csv_auto(
-    'C:/Users/bruno/Downloads/Tierra_Guarani_Proyecto_Completo/Tierra_Guarani_Proyecto/modelo_powerbi/dim_sucursal.csv'
+    'modelo_powerbi/dim_sucursal.csv'
 )
 ON CONFLICT (sk_sucursal) DO NOTHING;
 
@@ -103,7 +97,7 @@ ON CONFLICT (sk_sucursal) DO NOTHING;
 INSERT INTO dw.dim_fecha
 SELECT *
 FROM read_csv_auto(
-    'C:/Users/bruno/Downloads/Tierra_Guarani_Proyecto_Completo/Tierra_Guarani_Proyecto/modelo_powerbi/dim_fecha.csv'
+    'modelo_powerbi/dim_fecha.csv'
 )
 ON CONFLICT (sk_fecha) DO NOTHING;
 
@@ -113,7 +107,7 @@ ON CONFLICT (sk_fecha) DO NOTHING;
 INSERT INTO dw.dim_metodo_pago
 SELECT *
 FROM read_csv_auto(
-    'C:/Users/bruno/Downloads/Tierra_Guarani_Proyecto_Completo/Tierra_Guarani_Proyecto/modelo_powerbi/dim_metodo_pago.csv'
+    'modelo_powerbi/dim_metodo_pago.csv'
 )
 ON CONFLICT (sk_metodo_pago) DO NOTHING;
 
@@ -129,7 +123,7 @@ ON CONFLICT (sk_metodo_pago) DO NOTHING;
 INSERT INTO dw.fact_ventas
 SELECT *
 FROM read_csv_auto(
-    'C:/Users/bruno/Downloads/Tierra_Guarani_Proyecto_Completo/Tierra_Guarani_Proyecto/modelo_powerbi/fact_ventas.csv'
+    'modelo_powerbi/fact_ventas.csv'
 )
 ON CONFLICT (nk_linea) DO NOTHING;
 
@@ -141,7 +135,7 @@ ON CONFLICT (nk_linea) DO NOTHING;
 CREATE OR REPLACE TABLE dw.rechazos AS
 SELECT *
 FROM read_csv_auto(
-    'C:/Users/bruno/Downloads/Tierra_Guarani_Proyecto_Completo/Tierra_Guarani_Proyecto/modelo_powerbi/rechazos.csv',
+    'modelo_powerbi/rechazos.csv',
     all_varchar = true
 );
 
