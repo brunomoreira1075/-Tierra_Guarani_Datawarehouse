@@ -25,12 +25,81 @@ valid=v[v.motivo_rechazo.eq('')].copy();valid['nk_cliente']=valid.nk_cliente.fil
 clientes=pd.concat([pd.DataFrame([{'nk_cliente':'NO_DEFINIDO','segmento':'No definido'}]),clientes],ignore_index=True)
 fecha=pd.DataFrame({'fecha':pd.date_range('2025-01-01','2026-12-31')});fecha['sk_fecha']=fecha.fecha.dt.strftime('%Y%m%d').astype(int);fecha['anio']=fecha.fecha.dt.year;fecha['mes']=fecha.fecha.dt.month;fecha['mes_nombre']=fecha.fecha.dt.strftime('%B');fecha['trimestre']=fecha.fecha.dt.quarter;fecha['dia_semana']=fecha.fecha.dt.day_name();fecha['numero_dia_semana']=fecha.fecha.dt.dayofweek+1
 fecha['fecha']=fecha.fecha.dt.strftime('%Y-%m-%d')
-for name,df,key in [('dim_producto',prods,'nk_producto'),('dim_sucursal',suc,'nk_sucursal'),('dim_cliente',clientes,'nk_cliente'),('dim_metodo_pago',pagos,'nk_metodo_pago')]:
- df=df.copy();df.insert(0,'sk_'+name[4:],np.arange(1,len(df)+1));df.to_csv(out/(name+'.csv'),index=False,encoding='utf-8-sig')
- if name=='dim_producto':dp=df
- if name=='dim_sucursal':ds=df
- if name=='dim_cliente':dc=df
- if name=='dim_metodo_pago':dm=df
+
+for name, df, key in [
+    ('dim_producto', prods, 'nk_producto'),
+    ('dim_sucursal', suc, 'nk_sucursal'),
+    ('dim_cliente', clientes, 'nk_cliente'),
+    ('dim_metodo_pago', pagos, 'nk_metodo_pago')
+]:
+    df = df.copy()
+    sk_col = 'sk_' + name[4:]
+
+    if name == 'dim_cliente':
+        # Cliente desconocido con clave sustituta -1
+        df.insert(0, sk_col, [-1] + list(range(1, len(df))))
+
+    elif name == 'dim_producto':
+        # SCD Tipo 1: actualizar atributos sin guardar historial
+        ruta_anterior = out / 'dim_producto.csv'
+
+        if ruta_anterior.exists():
+            anterior = pd.read_csv(
+                ruta_anterior,
+                encoding='utf-8-sig'
+            )
+
+            claves = dict(zip(
+                anterior['nk_producto'],
+                anterior['sk_producto']
+            ))
+
+            siguiente_sk = int(anterior['sk_producto'].max()) + 1
+            nuevas_claves = []
+
+            for nk in df['nk_producto']:
+                if nk not in claves:
+                    claves[nk] = siguiente_sk
+                    siguiente_sk += 1
+
+                nuevas_claves.append(claves[nk])
+
+            df.insert(0, sk_col, nuevas_claves)
+
+        else:
+            df.insert(
+                0,
+                sk_col,
+                np.arange(1, len(df) + 1)
+            )
+
+    else:
+        df.insert(
+            0,
+            sk_col,
+            np.arange(1, len(df) + 1)
+        )
+
+    # Guardar la dimensión actualizada
+    df.to_csv(
+        out / (name + '.csv'),
+        index=False,
+        encoding='utf-8-sig'
+    )
+
+    # Conservar las dimensiones para construir la tabla de hechos
+    if name == 'dim_producto':
+        dp = df
+
+    if name == 'dim_sucursal':
+        ds = df
+
+    if name == 'dim_cliente':
+        dc = df
+
+    if name == 'dim_metodo_pago':
+        dm = df
+
 fecha.to_csv(out/'dim_fecha.csv',index=False,encoding='utf-8-sig')
 f=valid.merge(dp[['nk_producto','sk_producto']],on='nk_producto').merge(ds[['nk_sucursal','sk_sucursal']],on='nk_sucursal').merge(dc[['nk_cliente','sk_cliente']],on='nk_cliente').merge(dm[['nk_metodo_pago','sk_metodo_pago']],on='nk_metodo_pago')
 f['sk_fecha']=f.fecha_dt.dt.strftime('%Y%m%d').astype(int);f['importe_venta']=f.cantidad*f.precio_unitario;f['costo_total']=f.cantidad*f.costo_unitario;f['margen_bruto']=f.importe_venta-f.costo_total
