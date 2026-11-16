@@ -14,6 +14,6 @@ CREATE OR REPLACE TABLE dw.dim_cliente AS SELECT * FROM read_csv_auto('modelo_po
 CREATE OR REPLACE TABLE dw.dim_metodo_pago AS SELECT * FROM read_csv_auto('modelo_powerbi/dim_metodo_pago.csv');
 CREATE OR REPLACE TABLE dw.fact_ventas AS SELECT * FROM read_csv_auto('modelo_powerbi/fact_ventas.csv');
 CREATE OR REPLACE TABLE dw.rechazos AS SELECT * FROM read_csv_auto('modelo_powerbi/rechazos.csv',all_varchar=true);
--- El miembro desconocido en cliente usa la clave natural NO_DEFINIDO.
--- En implementación productiva, adoptar sk=-1 para todas las dimensiones desconocidas.
+-- El cliente desconocido utiliza la clave sustituta -1.
+-- El ETL genera esta clave en dim_cliente y fact_ventas.
 SELECT COUNT(*) AS lineas_validas, SUM(importe_venta) AS ventas_gs FROM dw.fact_ventas;
